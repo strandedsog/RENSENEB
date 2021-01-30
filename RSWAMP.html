@@ -228,6 +228,7 @@
 		}				
 		</style>
 	</head>
+	<script type="text/javascript" src="hover.js"></script>
 	<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;" onload="display_ct()">
 		
 
@@ -235,6 +236,12 @@
 			<div class="column1">
 		    	<img onclick="showCoords(event)" src="OASIS.jpg" usemap="#worldmap" style="width: 100%">
 		  	</div>
+			<map name="worldmap">
+			  <area shape="rect" coords="400,380,401,381" class="target" href="#" onclick="on()">
+			</map>
+			<div id="overlay" onclick="off()" style="padding-top: 20%">
+				<center><img src="folded_pouch.png" style="height: 200px"></center>
+			</div>	
 		  	<div class="column2">
 
 		    	
